@@ -5,8 +5,7 @@ const client = new Discord.Client();
  
 
 client.on('ready', () => {
-    client.user.setStatus('online')
-    client.user.setPresence({ game: { name: 'with discord.js' , type: 'WATCHING' } })
+    client.user.setActivity('me dance', { type: 'WATCHING' });
 });
 
  
