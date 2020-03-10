@@ -10,6 +10,16 @@ client.on('ready', () => {
 
 });
 
+client.on("ready", () => {
+    client.user.setPresence({
+        game: { 
+            name: 'my code',
+            type: 'WATCHING'
+        },
+        status: 'idle'
+    })
+})
+
  
 
 client.on('message', message => {
