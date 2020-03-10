@@ -6,12 +6,9 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     client.user.setStatus('online')
-    client.user.setPresence({
-        game: {
-            name: 'me dance',
-            type: '3'
-        }
-    });
+    client.user.setPresence({ game: { name: 'with discord.js' , type: 'WATCHING' }, status: 'idle' })
+    .then(console.log)
+    .catch(console.error);
 });
 
  
