@@ -5,8 +5,6 @@ client.once('ready', () => {
 	console.log('Ready!');
 });
 
-client.login('NTczOTMwNTQxMjg0MzI3NDI0.XmgOeQ.sCw2EFLlY2Wt0RGXL_GPlgZYaVE');
-
 client.on('message', message => {
     if(message.author.bot) return;
     if (message.content.includes('Yas')) {
@@ -38,3 +36,6 @@ client.on('message', message => {
     }
   
 });
+
+client.login(process.env.BOT_TOKEN);//BOT_TOKEN is the Client Secret
+
