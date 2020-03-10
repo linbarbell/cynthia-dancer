@@ -1,12 +1,25 @@
 {
+
   "name": "cynthia",
-  "version": "1.0.0",
-  "description": "cynthia she's a really cool dancer.",
+
+  "description": "Cynthia she's a really cool dancer.",
+
+  "version": "0.0.0",
+
   "main": "bot.js",
-  "author": "clay",
+
+  "scripts": {
+
+    "start": "node bot.js"
+
+  },
+
   "dependencies": {
-    "discord.io": "^2.5.3",
-    "discord.js": "^12.0.2",
-    "winston": "^3.2.1"
+
+    "discord.js": "11.1.0",
+
+    "request": "2.81.0"
+
   }
+
 }
