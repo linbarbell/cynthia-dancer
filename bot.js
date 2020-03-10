@@ -5,10 +5,10 @@ const client = new Discord.Client();
 client.on('ready', () => {
     client.user.setPresence({
         game: { 
-            name: 'my code',
+            name: 'me dance',
             type: 'WATCHING'
         },
-        status: 'idle'
+        status: 'available'
     })
 })
 
