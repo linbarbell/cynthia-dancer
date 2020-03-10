@@ -3,13 +3,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 client.on('ready', () => {
-    client.user.setActivity({
-        game: { 
-            name: 'me dance',
-            type: 'WATCHING'
-        },
-        status: 'available'
-    })
+    client.user.setActivity('YouTube', { type: 'WATCHING' });
 })
 
  
