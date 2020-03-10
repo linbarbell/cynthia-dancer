@@ -9,8 +9,8 @@ console.log('Bot: Hosting ' + `${client.users.size}` + ' users, in ' + `${client
     client.user.setStatus('online')
     client.user.setPresence({
         game: {
-            name: 'Use f!help',
-            type: "Playing",
+            name: 'me dance',
+            type: "Watching",
             url: "https://discordapp.com/"
         }
     });
