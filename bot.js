@@ -10,8 +10,8 @@ console.log('Bot: Hosting ' + `${client.users.size}` + ' users, in ' + `${client
     client.user.setActivity({
         game: {
             name: 'me dance',
-            type: "Watching",
-            url: "https://discordapp.com/"
+            type: '3',
+            url: 'https://discordapp.com/'
         }
     });
 });
