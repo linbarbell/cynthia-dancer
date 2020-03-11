@@ -8,7 +8,21 @@ client.on('ready', () => {
     client.user.setActivity('me dance', { type: 'WATCHING' });
 });
 
- 
+client.on('message', message => {
+    if(message.author.bot) return;
+    if (message.content.includes('gay rights')) {
+        message.channel.send('Gay rights!');   
+    }
+  
+}); 
+
+client.on('message', message => {
+    if(message.author.bot) return;
+    if (message.content.includes('Gay rights')) {
+        message.channel.send('Gay rights!');   
+    }
+  
+}); 
 
 client.on('message', message => {
     if(message.author.bot) return;
