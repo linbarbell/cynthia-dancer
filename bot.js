@@ -10,6 +10,22 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if(message.author.bot) return;
+    if (message.content.includes('trans rights')) {
+        message.channel.send('Trans rights!');   
+    }
+  
+}); 
+
+client.on('message', message => {
+    if(message.author.bot) return;
+    if (message.content.includes('Trans rights')) {
+        message.channel.send('Trans rights!');   
+    }
+  
+}); 
+
+client.on('message', message => {
+    if(message.author.bot) return;
     if (message.content.includes('gay rights')) {
         message.channel.send('Gay rights!');   
     }
