@@ -87,7 +87,7 @@ client.on('message', message => {
 const args = message.content.match(new RegExp(`^(?:.*\\s+)?i'?m\\s+(\\w+)(?:\\s+.*)?$');
 if(args) {  
     message.channel.sendMessage(`Hi ${args[1]}, I'm Cynthia!`);  
-}  
+});  
 
  
 
