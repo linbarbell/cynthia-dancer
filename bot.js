@@ -6,9 +6,9 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if(message.author.bot) return;
+    if (message.author.bot) return;
     let content = message.content.toLowerCase();
-    if content.includes('congrat') || content.includes('grats') || content.includes('gratz')) {
+    if (content.includes('congrat') || content.includes('grats') || content.includes('gratz')) {
         message.channel.send('Congratulations!')
     }
     if (content.includes('fashion')) {
