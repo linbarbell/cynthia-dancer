@@ -10,6 +10,22 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if(message.author.bot) return;
+    if (message.content.includes('fashion')) {
+        message.channel.send('Fashion? I love fashion!');   
+    }
+  
+}); 
+
+client.on('message', message => {
+    if(message.author.bot) return;
+    if (message.content.includes('Fashion')) {
+        message.channel.send('Fashion? I love fashion!');   
+    }
+  
+}); 
+
+client.on('message', message => {
+    if(message.author.bot) return;
     if (message.content.includes('trans rights')) {
         message.channel.send('Trans rights!');   
     }
