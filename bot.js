@@ -27,7 +27,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if(message.author.bot) return;
-    if (message.content.toLowerCase() == ('grats*')) {
+    if (message.content.toLowerCase() == ('grats***')) {
         message.channel.send('Congratulations!');   
     }
   
@@ -35,7 +35,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if(message.author.bot) return;
-    if (message.content.toLowerCase() == ('gratz*')) {
+    if (message.content.toLowerCase() == ('gratz***')) {
         message.channel.send('Congratulations!');   
     }
   
