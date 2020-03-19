@@ -10,6 +10,14 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if(message.author.bot) return;
+    if (message.content.includes('grats')) {
+        message.channel.send('Congratulations!');   
+    }
+  
+}); 
+
+client.on('message', message => {
+    if(message.author.bot) return;
     if (message.content.includes('fashion')) {
         message.channel.send('Fashion? I love fashion!');   
     }
