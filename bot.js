@@ -16,9 +16,10 @@ client.on('message', message => {
   
 });
 
+
 client.on('message', message => {
     if(message.author.bot) return;
-    if (message.content.includes('gz')) {
+    if (message.content.toLowerCase().includes('congrat')) {
         message.channel.send('Congratulations!');   
     }
   
@@ -26,7 +27,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if(message.author.bot) return;
-    if (message.content.includes('Congrat')) {
+    if (message.content.toLowerCase().includes('grats')) {
         message.channel.send('Congratulations!');   
     }
   
@@ -34,31 +35,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if(message.author.bot) return;
-    if (message.content.includes('congrat')) {
-        message.channel.send('Congratulations!');   
-    }
-  
-});
-
-client.on('message', message => {
-    if(message.author.bot) return;
-    if (message.content.includes('Grats')) {
-        message.channel.send('Congratulations!');   
-    }
-  
-});
-
-client.on('message', message => {
-    if(message.author.bot) return;
-    if (message.content.includes('grats')) {
-        message.channel.send('Congratulations!');   
-    }
-  
-}); 
-
-client.on('message', message => {
-    if(message.author.bot) return;
-    if (message.content.includes('fashion')) {
+    if (message.content.toLowerCase().includes('fashion')) {
         message.channel.send('Fashion? I love fashion!');   
     }
   
@@ -66,15 +43,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if(message.author.bot) return;
-    if (message.content.includes('Fashion')) {
-        message.channel.send('Fashion? I love fashion!');   
-    }
-  
-}); 
-
-client.on('message', message => {
-    if(message.author.bot) return;
-    if (message.content.includes('trans rights')) {
+    if (message.content.toLowerCase().includes('trans rights')) {
         message.channel.send('Trans rights!');   
     }
   
@@ -82,15 +51,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if(message.author.bot) return;
-    if (message.content.includes('Trans rights')) {
-        message.channel.send('Trans rights!');   
-    }
-  
-}); 
-
-client.on('message', message => {
-    if(message.author.bot) return;
-    if (message.content.includes('gay rights')) {
+    if (message.content.toLowerCase().includes('gay rights')) {
         message.channel.send('Gay rights!');   
     }
   
@@ -98,39 +59,16 @@ client.on('message', message => {
 
 client.on('message', message => {
     if(message.author.bot) return;
-    if (message.content.includes('Gay rights')) {
-        message.channel.send('Gay rights!');   
-    }
-  
-}); 
-
-client.on('message', message => {
-    if(message.author.bot) return;
-    if (message.content.includes('Yas')) {
+    if(message.content.toLowerCase().includes('yas')) {
         message.channel.send('yas!');   
     }
   
 });
 
-client.on('message', message => {
-    if(message.author.bot) return;
-    if(message.content.includes('yas')) {
-        message.channel.send('yas!');   
-    }
-  
-});
 
 client.on('message', message => {
     if(message.author.bot) return;
-    if(message.content.includes('Cynthia')) {
-        message.channel.send("Ready? Here we go now! Cynthia she's a really cool dancer. Cynthia boogie to the groove now. She's got those moves, long as you move those arms and legs. She's moving up on the floor. She's ready to break some eggs. Make an omlette Cynthia. Whoo! Shake it, shake it. You're so fantastic. Just don't break it, it's only made of plastic. Cynthia she's a real cool dancer. Cynthia boogie to the groove.");   
-    }
-  
-});
-
-client.on('message', message => {
-    if(message.author.bot) return;
-    if(message.content.includes('cynthia')) {
+    if(message.content.toLowerCase().includes('cynthia')) {
         message.channel.send("Ready? Here we go now! Cynthia she's a really cool dancer. Cynthia boogie to the groove now. She's got those moves, long as you move those arms and legs. She's moving up on the floor. She's ready to break some eggs. Make an omlette Cynthia. Whoo! Shake it, shake it. You're so fantastic. Just don't break it, it's only made of plastic. Cynthia she's a real cool dancer. Cynthia boogie to the groove.");   
     }
   
