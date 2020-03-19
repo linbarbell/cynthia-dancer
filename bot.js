@@ -10,6 +10,54 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if(message.author.bot) return;
+    if (message.content.includes('GZ')) {
+        message.channel.send('Congratulations!');   
+    }
+  
+});
+
+client.on('message', message => {
+    if(message.author.bot) return;
+    if (message.content.includes('Gz')) {
+        message.channel.send('Congratulations!');   
+    }
+  
+});
+
+client.on('message', message => {
+    if(message.author.bot) return;
+    if (message.content.includes('gz')) {
+        message.channel.send('Congratulations!');   
+    }
+  
+});
+
+client.on('message', message => {
+    if(message.author.bot) return;
+    if (message.content.includes('Congrat')) {
+        message.channel.send('Congratulations!');   
+    }
+  
+});
+
+client.on('message', message => {
+    if(message.author.bot) return;
+    if (message.content.includes('congrat')) {
+        message.channel.send('Congratulations!');   
+    }
+  
+});
+
+client.on('message', message => {
+    if(message.author.bot) return;
+    if (message.content.includes('Grats')) {
+        message.channel.send('Congratulations!');   
+    }
+  
+});
+
+client.on('message', message => {
+    if(message.author.bot) return;
     if (message.content.includes('grats')) {
         message.channel.send('Congratulations!');   
     }
