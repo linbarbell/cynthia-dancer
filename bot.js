@@ -8,7 +8,7 @@ client.on('ready', () => {
 client.on('message', message => {
     if(message.author.bot) return;
     let content = message.content.toLowerCase();
-    if (content.search(/\bgz+\b/g) !== -1) || content.includes('congrat') || content.includes('grats') || content.includes('gratz')) {
+    if content.includes('congrat') || content.includes('grats') || content.includes('gratz') {
         message.channel.send('Congratulations!')
     }
     if (content.includes('fashion')) {
@@ -22,6 +22,9 @@ client.on('message', message => {
     }
     if (content.search(/\byas+\b/g) !== -1) {
         message.channel.send('yas!');
+    }
+    if (content.search(/\bgz+\b/g) !== -1) {
+        message.channel.send('Congratulations!');
     }
     if (content.includes('cynthia')) {
         message.channel.send("Cynthia she's a really cool dancer. Cynthia boogie to the groove now.");
