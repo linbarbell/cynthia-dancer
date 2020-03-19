@@ -20,7 +20,7 @@ client.on('message', message => {
     if (content.includes('gay rights')) {
         message.channel.send('Gay rights!');
     }
-    if (content.search(/\byas\b/g) !== -1) {
+    if (content.search(/\byas+\b/g) !== -1) {
         message.channel.send('yas!');
     }
     if (content.includes('cynthia')) {
