@@ -10,7 +10,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if(message.author.bot) return;
-    if (message.content.includes.toLowerCase('gz')) {
+    if (message.content.toLowerCase().includes('gz')) {
         message.channel.send('Congratulations!');   
     }
   
