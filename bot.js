@@ -35,6 +35,14 @@ client.on('message', message => {
 
 client.on('message', message => {
     if(message.author.bot) return;
+    if (message.content.toLowerCase().includes('gratz')) {
+        message.channel.send('Congratulations!');   
+    }
+  
+});
+
+client.on('message', message => {
+    if(message.author.bot) return;
     if (message.content.toLowerCase().includes('fashion')) {
         message.channel.send('Fashion? I love fashion!');   
     }
