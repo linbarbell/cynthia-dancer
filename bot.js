@@ -6,9 +6,9 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.author.bot) return;
+    if (message.author.bot || content.search(/\b(c+o+n+g+r+a+)\b/) !== -1) return;
     let content = message.content.toLowerCase();
-    if (!content.search(/\b(c+o+n+g+r+a+)\b/) !== -1 || content.search(/\b(g+z+)+\b/) !== -1 || content.search(/\b(c+o+n+g+r+a+.+)\b/) !== -1 || content.includes('grats') || content.includes('gratz')) {
+    if (content.search(/\b(g+z+)+\b/) !== -1 || content.search(/\b(c+o+n+g+r+a+.+)\b/) !== -1 || content.includes('grats') || content.includes('gratz')) {
         message.channel.send('Congratulations!')
     }
     if (content.includes('fashion')) {
