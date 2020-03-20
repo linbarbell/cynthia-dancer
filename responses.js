@@ -23,7 +23,7 @@ class Responses {
         if (content.includes('gay rights')) {
             responses.push(this.gayRights);
         }
-        if (content.search(/\bya+s+\b/g) !== -1) {
+        if (content.search(/\by+a+s+\b/g) !== -1) {
             responses.push(this.yas);
         }
         if (content.includes('cynthia')) {
