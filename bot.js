@@ -8,7 +8,7 @@ client.on('ready', () => {
 client.on('message', message => {
     if (message.author.bot) return;
     let content = message.content.toLowerCase();
-    if (content.search(/\b(g+z+)+\b/) !== -1 || content.search(/\b(c+o+n+g+r+a+.+)\b/) !== -1 || content.includes('grats') || content.includes('gratz') && !content.search(/\b(c+o+n+g+r+a+)\b/) !== -1) {
+    if (content.search(/\b(g+z+)+\b/) !== -1 || content.search(/\b(c+o+n+g+r+a+.+)\b/) !== -1 || content.includes('grats') || content.includes('gratz') && content.search(/\b(c+o+n+g+r+a+)\b/) == -1) {
         message.channel.send('Congratulations!')
     }
     if (content.includes('fashion')) {
