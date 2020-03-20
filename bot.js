@@ -1,32 +1,17 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+const Responses = require('./responses.js');
+const responses = new Responses();
 
 client.on('ready', () => {
     client.user.setActivity('me dance', { type: 'WATCHING' });
+    console.log(responses.transRights);
 });
 
 client.on('message', message => {
     if (message.author.bot) return;
-    let content = message.content.toLowerCase();
-    if (content.search(/\b(g+z+)+\b/) !== -1 || content.search(/\bc+o+n+g+r+a+[b-z]+/) !== -1 || content.search(/\bg+r+a+t+[s,z]+\b/) !== -1) {
-        message.channel.send('Congratulations!')
-    }
-    if (content.includes('fashion')) {
-        message.channel.send('Fashion? I love fashion!');
-    }
-    if (content.includes('trans rights')) {
-        message.channel.send('Trans rights!');
-    }
-    if (content.includes('gay rights')) {
-        message.channel.send('Gay rights!');
-    }
-    if (content.search(/\bya+s+\b/g) !== -1) {
-        message.channel.send('yas!');
-    }
-    if (content.includes('cynthia')) {
-        message.channel.send("Cynthia she's a really cool dancer. Cynthia boogie to the groove now.");
-    }
+    let cynResponses = responses.get(message.content);
+    if (cynResponses) cynResponses.forEach(response => message.channel.send(response));
 });
-
 
 client.login(process.env.BOT_TOKEN); //BOT_TOKEN is the Client Secret
