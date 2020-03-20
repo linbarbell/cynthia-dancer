@@ -9,7 +9,7 @@ client.on('message', message => {
     if (message.author.bot) return;
     let content = message.content.toLowerCase();
     if (content.search(/\b(c+o+n+g+r+a+)\b/) !== -1) return;
-    if (content.search(/\b(g+z+)+\b/) !== -1 || content.search(/\b(c+o+n+g+r+a+.+)\b/) !== -1 || content.includes('grats') || content.includes('gratz')) {
+    if (content.search(/\b(g+z+)+\b/) !== -1 || content.search(/\b(c+o+n+g+r+a+.+)\b/) !== -1 || content.includes('grats') || content.includes('gratz') && !content.search(/\b(c+o+n+g+r+a+)\b/) !== -1) {
         message.channel.send('Congratulations!')
     }
     if (content.includes('fashion')) {
