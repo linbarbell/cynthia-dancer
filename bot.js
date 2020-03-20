@@ -8,7 +8,7 @@ client.on('ready', () => {
 client.on('message', message => {
     if (message.author.bot) return;
     let content = message.content.toLowerCase();
-    if (content.search(/\bgz+\b) !== -1 || content.includes('congrat') || content.includes('grats') || content.includes('gratz')) {
+    if (content.search(/\bgz+\b/) !== -1 || content.includes('congrat') || content.includes('grats') || content.includes('gratz')) {
         message.channel.send('Congratulations!')
     }
     if (content.includes('fashion')) {
