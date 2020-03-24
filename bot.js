@@ -1,7 +1,9 @@
 const Discord = require('discord.js');
-const client = new Discord.Client();
 const Responses = require('./responses.js');
+const fs = require('fs');
+const client = new Discord.Client();
 const responses = new Responses();
+const token = process.env.BOT_TOKEN || JSON.parse(fs.readFileSync('./config.json')).bot;
 
 client.on('ready', () => {
     client.user.setActivity('me dance', { type: 'WATCHING' });
@@ -14,4 +16,4 @@ client.on('message', message => {
     if (cynResponses) cynResponses.forEach(response => message.channel.send(response));
 });
 
-client.login(process.env.BOT_TOKEN); //BOT_TOKEN is the Client Secret
+client.login(token);
